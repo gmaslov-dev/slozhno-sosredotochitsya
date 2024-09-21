@@ -11,5 +11,6 @@
   --main-title-color: #db00ff;
 
   /* шрифты */
-  --main-font: 'IBM Plex mono';
+  --main-font: 'IBM Plex mono', Arial, monospace;
+  --main-font-size: 18px;
 }

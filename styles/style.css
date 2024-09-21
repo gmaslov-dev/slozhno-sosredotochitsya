@@ -1,21 +1,21 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  font-family: var(--main-font);
   color: var(--text-color);
-  background-color: var(--bg-color);
-
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--main-font, monospace);
+  font-size: var(--main-font-size);
   background: center / cover no-repeat url(../images/cover-image-dark.png);
+  background-color: var(--bg-color);
   background-attachment: fixed;
 }
 
 .header {
-  block-size: 100vb;
   display: grid;
   grid-auto-rows: 1fr;
   padding-block-start: 18%;
   padding-block-end:17.6%;
+  block-size: 100vb;
 }
 
 .decorated-zone {
@@ -25,77 +25,82 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
   display: block;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  inset-block-start: 10px;
+  inset-inline-end: 0;
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
 }
 
 .decorated-zone::before {
   content: "";
   position: absolute;
-  inset-block-end: 10px;
-  inset-inline-start: 10px;
   display: block;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  inset-block-end: 10px;
+  inset-inline-start: 0;
   inline-size: 25px;
   block-size: 25px;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
 }
 
 .content-section {
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;
+  inline-size: calc(100% - 20px);
+  margin: 0 auto;
 }
 
 .decore-icon {
   position: absolute;
   inset-block-start: 10px;
-  inset-inline-end: 38px;
+  inset-inline-end: 28px;
 }
 
 .decore-icon::after {
   content: "REC";
+  color: var(--accent-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 139%;
-  color: var(--accent-color);
 }
 
 .decore-icon::before {
   content: "";
   position: absolute;
   display: block;
+  border-radius: 100%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
   block-size: 9px;
   inline-size: 9px;
-  border-radius: 100%;
-  background-color: var(--accent-color);
-  box-shadow: 0 0 4px 2px var(--accent-color);
   inset-inline-end: -19px;
   inset-block-start: 8px;
 }
 
 .header__theme-menu {
   justify-self: end;
-  padding-block-start: 8px;
+  margin-block-start: 6px;
 }
 
-.header__theme-menu-item:not(:last-child) {
-  margin-block-end: 15px;
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
 
 .header__theme-menu-button {
-  line-height: 100%;
-  padding: 1.8px 13px;
-  background-color: transparent;
   border: none;
-  color: var(--accent-color);
-  font-size: 18px;
-  font-family: inherit;
+  min-inline-size: 70px;
+  block-size: 26px; 
+  cursor: pointer;
   outline: none;
+  color: var(--accent-color);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 100%;
+  background-color: transparent;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -123,8 +128,8 @@
 
 .title {
   font-weight: 700;
-  font-size: 18px;
   line-height: 130%;
+  font-size: var(--main-font-size);
 }
 
 .header__title {
@@ -137,5 +142,5 @@
 }
 
 .content {
-  padding: 40px 0;
+  
 }
