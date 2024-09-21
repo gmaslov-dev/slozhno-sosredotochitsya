@@ -2,4 +2,140 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--main-font);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  background: center / cover no-repeat url(../images/cover-image-dark.png);
+  background-attachment: fixed;
+}
+
+.header {
+  block-size: 100vb;
+  display: grid;
+  grid-auto-rows: 1fr;
+  padding-block-start: 18%;
+  padding-block-end:17.6%;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+}
+
+.content-section {
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+
+.decore-icon {
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 38px;
+}
+
+.decore-icon::after {
+  content: "REC";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  color: var(--accent-color);
+}
+
+.decore-icon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 100%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  inset-inline-end: -19px;
+  inset-block-start: 8px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  padding-block-start: 8px;
+}
+
+.header__theme-menu-item:not(:last-child) {
+  margin-block-end: 15px;
+}
+
+.header__theme-menu-button {
+  line-height: 100%;
+  padding: 1.8px 13px;
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+  font-size: 18px;
+  font-family: inherit;
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.main-title {
+  color: var(--main-title-color);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.header__title {
+  align-self: end;
+}
+
+.title-decor {
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+}
+
+.content {
+  padding: 40px 0;
 }
