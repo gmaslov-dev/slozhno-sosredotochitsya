@@ -15,6 +15,7 @@
   --control-color: var(--accent-color);
   --corner-color: var(--accent-color);
   --section-title-color: var(--accent-color);
-  --main-font: "IBM Plex mono", Arial, monospace;
+  --main-font: "IBM Plex mono", Inter, sans-serif;
   --main-font-size: 1.125rem;
+  --decore-visibility: visible;
 }

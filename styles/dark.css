@@ -2,9 +2,10 @@
   --bg-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
+  --accented-text-color: var(--bg-color);
   --main-title-color: #db00ff;
   --bg-image: url(../images/cover-image-dark.png);
-  --visibility: visible;
+  --decore-visibility: visible;
   --control-color: var(--accent-color);
   --control-color-opacity: rgba(255, 0, 112, 0.4);
   --corner-color: var(--accent-color);
