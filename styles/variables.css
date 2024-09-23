@@ -6,11 +6,15 @@
 :root {
   /* цвета  */
   --bg-color: #000028;
-  --text-color:  #f1b2ce;
+  --bg-image: url(../images/cover-image-dark.png);
+  --text-color: #f1b2ce;
   --accent-color: #ff0070;
+  --control-color-opacity: rgba(255, 0, 112, 0.4);
+  --accented-text-color: var(--bg-color);
   --main-title-color: #db00ff;
-
-  /* шрифты */
-  --main-font: 'IBM Plex mono', Arial, monospace;
-  --main-font-size: 18px;
+  --control-color: var(--accent-color);
+  --corner-color: var(--accent-color);
+  --section-title-color: var(--accent-color);
+  --main-font: "IBM Plex mono", Arial, monospace;
+  --main-font-size: 1.125rem;
 }
