@@ -3,7 +3,7 @@
   color: var(--text-color);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--main-font, sans-serif);
-  font-size: var(--main-font-size);
+  
   /* background: center / cover no-repeat url(../images/cover-image-dark.png); */
   background: center / cover no-repeat var(--bg-image);
   background-color: var(--bg-color);
@@ -12,6 +12,7 @@
 
 /* header */
 .header {
+  font-size: var(--main-font-size);
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   padding: 12px 0;
@@ -248,6 +249,7 @@
 /* main */
 
 .content {
+  font-size: var(--main-font-size);
   display: grid;
   gap: 49px;
   padding: 40px 0;
@@ -406,6 +408,7 @@
 }
 
 .footer {
+  font-size: var(--main-font-size);
   display: flex;
   block-size: 100vb;
   max-block-size: 668px;
