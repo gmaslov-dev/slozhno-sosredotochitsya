@@ -370,25 +370,6 @@
   }
 }
 
-.link {
-  border-block-end: 1px solid transparent;
-  line-height: 100%;
-  text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
-}
-
-.link:hover {
-  border-color: var(--text-color);
-}
-
-.link:focus {
-  outline: none;
-}
-
-.link:focus-visible {
-  outline: 1px solid var(--text-color);
-}
-
 /* статья */
 .article {
   display: flex;
