@@ -251,7 +251,7 @@
 .content {
   font-size: var(--main-font-size);
   display: grid;
-  gap: 49px;
+  gap: 50px;
   padding: 40px 0;
 
   @media (width >= 768px) {
@@ -260,7 +260,7 @@
   }
 
   @media (width >= 1024px) {
-    gap: 79px;
+    gap: 80px;
   }
 }
 
