@@ -105,16 +105,6 @@
 .decorated-zone {
   position: relative;
 
-  @media (width >= 768px) {
-    &::after {
-      inset-block-start: 20px;
-    }
-
-    &::before {
-      inset-block-end: 20px;
-    }
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -141,6 +131,16 @@
     inset-inline-start: 0;
     inline-size: 25px;
     block-size: 25px;
+  }
+
+  @media (width >= 768px) {
+    &::after {
+      inset-block-start: 20px;
+    }
+
+    &::before {
+      inset-block-end: 20px;
+    }
   }
 }
 
