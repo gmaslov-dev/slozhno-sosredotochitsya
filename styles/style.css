@@ -19,9 +19,6 @@
   @media (width >= 768px) {
     padding: 20px 0;
   }
-
-  @media (width >= 1024) {
-  }
 }
 
 .header__theme-menu {
