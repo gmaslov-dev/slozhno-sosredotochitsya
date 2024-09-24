@@ -3,8 +3,8 @@
   color: var(--text-color);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--main-font, sans-serif);
-  
-  /* background: center / cover no-repeat url(../images/cover-image-dark.png); */
+  font-size: var(--main-font-size);
+  background: center / cover no-repeat url(../images/cover-image-dark.png); */
   background: center / cover no-repeat var(--bg-image);
   background-color: var(--bg-color);
   background-attachment: fixed;
@@ -12,20 +12,16 @@
 
 /* header */
 .header {
-  font-size: var(--main-font-size);
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   padding: 11px 0;
   block-size: 100vb;
-  max-block-size: 668px;
 
   @media (width >= 768px) {
-    max-block-size: 1024px;
     padding: 20px 0;
   }
 
   @media (width >= 1024) {
-    max-block-size: 768px;
   }
 }
 
@@ -92,6 +88,7 @@
   color: var(--accented-text-color);
   font-weight: 700;
   font-size: var(--main-font-size);
+  margin-block-end: 2px;
 
   @media (width >= 768px) {
     justify-self: end;
@@ -250,7 +247,6 @@
 /* main */
 
 .content {
-  font-size: var(--main-font-size);
   display: grid;
   gap: 50px;
   padding: 40px 0;
@@ -409,16 +405,6 @@
 }
 
 .footer {
-  font-size: var(--main-font-size);
   display: flex;
   block-size: 100vb;
-  max-block-size: 668px;
-
-  @media (width >= 768px) {
-    max-block-size: 1024px;
-  }
-
-  @media (width >= 1024) {
-    max-block-size: 768px;
-  }
 }
