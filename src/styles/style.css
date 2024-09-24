@@ -22,7 +22,6 @@
 
 .header__theme-menu {
   justify-self: end;
-  /* align-self: center; */
 
   @media (width >= 768px) {
     align-self: center;
@@ -79,7 +78,6 @@
 }
 
 .header__subtitle {
-  /* align-self: center; */
   color: var(--accented-text-color);
   font-weight: 700;
   font-size: var(--main-font-size);
@@ -194,7 +192,6 @@
 
 .main-title_place_header {
   @media (width >= 768px) {
-    /* align-self: center; */
     transform: translateX(-20px);
     inline-size: calc(100% + 40px);
   }
