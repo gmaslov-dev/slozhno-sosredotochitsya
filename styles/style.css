@@ -302,7 +302,7 @@
 
 .section__container {
   display: grid;
-  gap: 19px;
+  gap: 20px;
 }
 
 .section__container_type_wide {
@@ -397,9 +397,6 @@
 .article__subtitle {
   color: var(--accented-text-color);
   font-weight: 400;
-}
-
-.article__subsection-text {
   line-height: 130%;
 }
 
