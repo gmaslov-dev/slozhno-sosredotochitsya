@@ -10,8 +10,8 @@
 /* header */
 .header {
   display: grid;
-  align-items: center;
   grid-template-rows: 1fr auto 1fr;
+  align-items: center;
   padding: 11px 0;
   block-size: 100vb;
 
@@ -78,10 +78,10 @@
 }
 
 .header__subtitle {
+  margin-block-end: 2px;
   color: var(--accented-text-color);
   font-weight: 700;
   font-size: var(--main-font-size);
-  margin-block-end: 2px;
 
   @media (width >= 768px) {
     justify-self: end;
@@ -104,6 +104,16 @@
 /* декоратиыне уголки */
 .decorated-zone {
   position: relative;
+
+  @media (width >= 768px) {
+    &::after {
+      inset-block-start: 20px;
+    }
+
+    &::before {
+      inset-block-end: 20px;
+    }
+  }
 
   &::after {
     content: "";
@@ -131,16 +141,6 @@
     inset-inline-start: 0;
     inline-size: 25px;
     block-size: 25px;
-  }
-
-  @media (width >= 768px) {
-    &::after {
-      inset-block-start: 20px;
-    }
-
-    &::before {
-      inset-block-end: 20px;
-    }
   }
 }
 
@@ -179,11 +179,11 @@
 
 /* крупный заголовок шапки и подвала*/
 .main-title {
+  margin-block-start: 2px;
   color: var(--main-title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82%;
-  margin-block-start: 2px;
 
   @media (width >= 768px) {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -237,7 +237,6 @@
 }
 
 /* main */
-
 .content {
   display: grid;
   gap: 50px;
@@ -392,6 +391,7 @@
   font-weight: 400;
   line-height: 130%;
 }
+
 
 .footer {
   display: flex;
