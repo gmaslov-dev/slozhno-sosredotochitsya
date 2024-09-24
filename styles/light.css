@@ -1,5 +1,5 @@
 .page.theme_light {
-  --bg-color: #ffc2e6;
+  --bg-color: #FFF1F7;
   --text-color: #353430;
   --accent-color: #ff8dcb;
   --accented-text-color: var(--text-color);
@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */
-    --bg-color: #ffc2e6;
+    --bg-color: #FFF1F7;
     --text-color: #353430;
     --accent-color: #ff8dcb;
     --accented-text-color: var(--text-color);
