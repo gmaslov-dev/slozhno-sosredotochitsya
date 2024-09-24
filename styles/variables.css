@@ -6,7 +6,7 @@
 :root {
   /* цвета  */
   --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
+  /* --bg-image: url(../images/cover-image-dark.png); */
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --control-color-opacity: rgba(255, 0, 112, 0.4);
