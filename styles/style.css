@@ -14,6 +14,7 @@
   align-items: center;
   padding: 11px 0;
   block-size: 100vb;
+  min-block-size: 668px;
 
   @media (width >= 768px) {
     padding: 20px 0;
@@ -68,7 +69,7 @@
   }
 
   &:focus-visible {
-    outline: 1px solid var(--control-color);
+    border-block-end: 1px solid var(--control-color);
   }
 }
 
@@ -217,6 +218,7 @@
   line-height: 100%;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
+  line-height: 70%;
 
   &:hover {
     border-color: var(--text-color);
@@ -245,10 +247,6 @@
   @media (width >= 768px) {
     gap: 80px;
     padding: 60px 0;
-  }
-
-  @media (width >= 1024px) {
-    gap: 80px;
   }
 }
 
@@ -396,4 +394,5 @@
 .footer {
   display: flex;
   block-size: 100vb;
+  min-block-size: 668px;
 }
