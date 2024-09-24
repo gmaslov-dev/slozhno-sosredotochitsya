@@ -4,7 +4,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--main-font, sans-serif);
   font-size: var(--main-font-size);
-  background: center / cover no-repeat url(../images/cover-image-dark.png); */
   background: center / cover no-repeat var(--bg-image);
   background-color: var(--bg-color);
   background-attachment: fixed;
