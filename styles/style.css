@@ -16,9 +16,15 @@
   grid-template-rows: 1fr auto 1fr;
   padding: 12px 0;
   block-size: 100vb;
+  max-block-size: 668px;
 
   @media (width >= 768px) {
+    max-block-size: 1024px;
     padding: 20px 0;
+  }
+
+  @media (width >= 1024) {
+    max-block-size: 768px;
   }
 }
 
@@ -421,4 +427,13 @@
 .footer {
   display: flex;
   block-size: 100vb;
+  max-block-size: 668px;
+
+  @media (width >= 768px) {
+    max-block-size: 1024px;
+  }
+
+  @media (width >= 1024) {
+    max-block-size: 768px;
+  }
 }
